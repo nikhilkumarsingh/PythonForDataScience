@@ -4,6 +4,6 @@ if n%2 != 0:
       for j in range(n):
          print(n-min(i,j,n-1-i,n-1-j),end="")
       print()
-else
+else:
   print("Not an odd number")
  
