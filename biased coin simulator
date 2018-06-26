@@ -1,0 +1,8 @@
+import random
+x=random.choice(['heads','tails'])
+print(x)
+y=random.random()
+if  y<0.6:
+	print('heads')
+else:
+	print('tailsb')
