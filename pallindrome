@@ -1,0 +1,24 @@
+s = []
+copy = ""
+count = -1
+n = int(input("enter number of strings: "))
+for i in range(n):
+	s.append(input())
+for i in s:
+	if i == i[::-1]:
+		print("-1")
+	else:
+		for j in range(0,len(i)):
+			copy=""
+			for k in range(0,len(i)):
+				if k == j:
+					continue
+				copy+=i[k]
+			# print(copy)
+			count+=1
+			if copy == copy[::-1]:
+				print(count)
+				break
+		else:
+			print("-1")
+		count = -1
