@@ -1,0 +1,5 @@
+import numpy as np 
+a=np.array([[1,2,3],[5,6,7],[9,10,11]])
+print(a)
+for i in range(3):
+    print(a[i,i],a[i,2-i])
